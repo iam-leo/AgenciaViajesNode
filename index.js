@@ -8,6 +8,9 @@ const app = express();
 //Definir el puerto
 const port = process.env.PORT || 4000;
 
+//Habilitar pug
+app.set('view engine', 'pug');
+
 //Agregar router
 app.use('/', router)
 
