@@ -663,6 +663,11 @@ video {
   clear: none;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -776,6 +781,10 @@ video {
 
 .w-12 {
   width: 3rem;
+}
+
+.w-\[1200px\] {
+  width: 1200px;
 }
 
 .flex-shrink {
@@ -2094,6 +2103,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-red-700 {
+  --tw-text-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-text-opacity));
 }
 
 .underline {

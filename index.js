@@ -16,6 +16,7 @@ app.use((req, res, next) => {
     const year = new Date()
 
     res.locals.currentYear = year.getFullYear();
+    res.locals.nombrePagina = "Mundo Aventura"
     next();
 })
 

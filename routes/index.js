@@ -4,13 +4,26 @@ const router = express.Router();
 
 // req --> lo que enviamos, res --> lo que express responde 
 router.get('/', (req, res)=>{ 
-    res.render('inicio');
+    res.render('inicio', {
+        pagina: 'Inicio'
+    });
 });
 
 router.get('/nosotros', (req, res)=>{ 
-    const viaje = "Viaje a Roma";
     res.render('nosotros',{
-        viaje
+        pagina: 'Nosotros'
+    });
+});
+
+router.get('/viajes', (req, res)=>{ 
+    res.render('viajes',{
+        pagina: 'Viajes'
+    });
+});
+
+router.get('/testimoniales', (req, res)=>{ 
+    res.render('testimoniales',{
+        pagina: 'Testimoniales'
     });
 });
 
