@@ -1,9 +1,14 @@
 //const express = require('express'); //common js
 import express from "express"; //Agregar al package.json el "type": "module"
-
 import router from "./routes/index.js";
+import db from "./config/db.js";
 
 const app = express();
+
+//Conectar DB
+db.authenticate()
+    .then( () => console.log('DB connected'))
+    .catch( e => console.log(e))
 
 //Definir el puerto
 const port = process.env.PORT || 4000;
