@@ -13,7 +13,6 @@ const db = new Sequelize('agencia_viajes', 'root', 'root', {
         acquire: 30000,
         idle: 10000
     },
-    operatorsAliases: false
 });
 
 export default db;
