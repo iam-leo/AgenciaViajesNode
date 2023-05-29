@@ -23,7 +23,10 @@ app.use((req, res, next) => {
     res.locals.currentYear = year.getFullYear();
     res.locals.nombrePagina = "Mundo Aventura"
     next();
-})
+});
+
+//Agregar body parser para leer datos de formularios
+app.use(express.urlencoded({extended: true}));
 
 //Definir carpeta public
 app.use(express.static('public'));
