@@ -1,6 +1,19 @@
 extends ./layouts/index
 
+block slider
+    div(class="slider")
+        h1(class="text-7xl font-title tracking-wider mb-2") Rio de Janeiro 
+        p(class="text-3xl font-title uppercase tracking-widest") aventura
+
+
 block contenido
-    main(class="w-[1200px] mx-auto")
-        h1(class="text-red-700")= pagina 
-    //img(src="img/superior.jpg", alt="alt")
+    main(class="max-w-screen-xl mx-auto")
+        h2(class="font-subtitle text-3xl uppercase text-center mt-14 mb-8") Sobre nosotros
+        div(class="w-full grid grid-cols-2")
+            div(class="p-6")
+                p(class="p-2") En Mundo Aventura, el entusiasmo y la alegría son nuestra brújula constante. Nos apasiona hacer realidad tus sueños de viaje, llevándote a destinos emocionantes y llenos de maravillas. Nuestro equipo vibrante y enérgico trabaja incansablemente para crear experiencias que te hagan sonreír, desde explorar selvas exuberantes hasta bucear en arrecifes de colores. Cada aventura es una oportunidad para reír, disfrutar y crear recuerdos felices que te acompañarán para siempre.
+
+                p(class="p-2") La alegría es el motor que impulsa cada aspecto de nuestro trabajo. Nos encanta ver las caras iluminadas de nuestros viajeros mientras descubren nuevos destinos, superan desafíos y se sumergen en culturas fascinantes. Desde los primeros momentos de planificación hasta el último día de la aventura, nos esforzamos por contagiar nuestro entusiasmo a través de cada detalle. Creemos que la vida está llena de momentos de felicidad y diversión, y nos enorgullece crear experiencias que te hagan sentir vivo y vibrante. ¡Ven y únete a nosotros en esta emocionante travesía por el mundo!
+            
+            div(class="flex justify-center items-center")
+                img(src="/img/inicio_nosotros.jpg", alt="" class="w-4/5 rounded-lg")

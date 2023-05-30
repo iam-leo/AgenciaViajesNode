@@ -689,19 +689,9 @@ video {
   margin-bottom: 3.5rem;
 }
 
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.my-10 {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .my-20 {
@@ -709,9 +699,19 @@ video {
   margin-bottom: 5rem;
 }
 
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .mb-2 {
@@ -752,6 +752,14 @@ video {
 
 .mt-auto {
   margin-top: auto;
+}
+
+.mb-11 {
+  margin-bottom: 2.75rem;
+}
+
+.mt-14 {
+  margin-top: 3.5rem;
 }
 
 .box-border {
@@ -869,10 +877,6 @@ video {
   height: 1.25rem;
 }
 
-.min-h-screen {
-  min-height: 100vh;
-}
-
 .w-1\/2 {
   width: 50%;
 }
@@ -893,12 +897,12 @@ video {
   width: 1.25rem;
 }
 
-.w-\[1200px\] {
-  width: 1200px;
-}
-
 .w-full {
   width: 100%;
+}
+
+.w-4\/5 {
+  width: 80%;
 }
 
 .max-w-screen-xl {
@@ -1254,6 +1258,10 @@ video {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -1444,10 +1452,6 @@ video {
 
 .gap-7 {
   gap: 1.75rem;
-}
-
-.gap-4 {
-  gap: 1rem;
 }
 
 .gap-8 {
@@ -1900,6 +1904,11 @@ video {
   border-style: none;
 }
 
+.border-gray-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -1913,11 +1922,6 @@ video {
 .border-teal-500 {
   --tw-border-opacity: 1;
   border-color: rgb(20 184 166 / var(--tw-border-opacity));
-}
-
-.border-gray-200 {
-  --tw-border-opacity: 1;
-  border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
@@ -2129,12 +2133,16 @@ video {
   padding: 1rem;
 }
 
+.p-6 {
+  padding: 1.5rem;
+}
+
 .p-8 {
   padding: 2rem;
 }
 
-.p-6 {
-  padding: 1.5rem;
+.p-5 {
+  padding: 1.25rem;
 }
 
 .px-16 {
@@ -2275,6 +2283,11 @@ video {
   line-height: 1;
 }
 
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -2303,12 +2316,12 @@ video {
   font-weight: 500;
 }
 
-.font-semibold {
-  font-weight: 600;
-}
-
 .font-normal {
   font-weight: 400;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .uppercase {
@@ -2379,16 +2392,16 @@ video {
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
 }
 
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+
 .tracking-wider {
   letter-spacing: 0.05em;
 }
 
 .tracking-widest {
   letter-spacing: 0.1em;
-}
-
-.tracking-tight {
-  letter-spacing: -0.025em;
 }
 
 .text-\[\#336699\]\/\[\.35\] {
@@ -2410,14 +2423,14 @@ video {
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
+.text-indigo-700 {
+  --tw-text-opacity: 1;
+  color: rgb(67 56 202 / var(--tw-text-opacity));
+}
+
 .text-indigo-800 {
   --tw-text-opacity: 1;
   color: rgb(55 48 163 / var(--tw-text-opacity));
-}
-
-.text-red-700 {
-  --tw-text-opacity: 1;
-  color: rgb(185 28 28 / var(--tw-text-opacity));
 }
 
 .text-red-800 {
@@ -2433,11 +2446,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-indigo-700 {
-  --tw-text-opacity: 1;
-  color: rgb(67 56 202 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -2775,6 +2783,43 @@ video {
 .content-\[\'this-is-also-valid\]-weirdly-enough\'\] {
   --tw-content: 'this-is-also-valid]-weirdly-enough';
   content: var(--tw-content);
+}
+
+.home{
+  position: relative;
+}
+
+.home .navegacion{
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.home .navegacion .logo{
+  color: #fff;
+  text-shadow: 0 0 5px #2b2b2b;
+}
+
+.home .navegacion a{
+  border-bottom: 1px solid transparent;
+}
+
+.home .navegacion nav a:hover{
+  border-bottom: 1px solid #fff;
+}
+
+.slider {
+  background: url(../img/superior.jpg);
+  min-height: 600px;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
 @media (min-width: 640px) {
