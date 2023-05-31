@@ -36,3 +36,10 @@
     justify-content: center;
     color: white;
 }
+
+.descuento{
+    height: 400px;
+    background-image: linear-gradient(to right, rgba(0,0,0,.5) 0%, rgba(0,0,0,.5) 50%, transparent 50%, transparent 100%), url('../img/cupon.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
