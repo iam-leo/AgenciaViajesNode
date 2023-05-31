@@ -4,12 +4,7 @@ block contenido
     main(class="max-w-screen-xl mx-auto")
         h1(class="font-title text-5xl text-indigo-800 my-8 text-center tracking-widest")= pagina
         
-        div(class="w-full mx-auto grid grid-cols-3 gap-8 my-20")
-            each testimonial in testimoniales
-                div(class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow")
-                    img(src="/img/quote.jpg", alt="Comillas de cita") 
-                    p(class="my-2 text-2xl font-bold tracking-tight text-gray-900 text-center")= testimonial.mensaje 
-                    p(class="font-normal text-xl text-indigo-700 text-right") ~ #{testimonial.nombre}
+        include ./layouts/testimoniales_block
 
         div 
             h2(class="text-2xl font-subtitle text-center mb-5") Agrega un testimonial
